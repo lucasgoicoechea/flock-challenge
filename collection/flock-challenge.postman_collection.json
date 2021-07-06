@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "d90b004a-ec09-4a0c-a9bb-50f6170bb8fe",
+		"name": "flock-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{server}}/FlockRestApplication/loging?name=Spring",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"FlockRestApplication",
+						"loging"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Spring"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Provincia Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{server}}/FlockRestApplication/loging?name=Spring",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"FlockRestApplication",
+						"loging"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Spring"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "localhost:8443"
+		}
+	]
+}
